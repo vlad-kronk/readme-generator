@@ -68,6 +68,7 @@ function renderQuestions(githubID, email) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  let md = `${renderTitle}\n`
   
 }
 

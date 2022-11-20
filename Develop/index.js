@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application,
 
-import generateMarkdown from './utils/generateMarkdown';
+// import generateMarkdown from './utils/generateMarkdown';
 
 var inquirer = require('inquirer');
 const fs = require('fs');
@@ -16,10 +16,13 @@ const questions = [
     // "Contribution instructions?",
     // "Test instructions?"
 
-    {name: 'input', message: 'Project title?'},
+    {name: 'Title', message: 'Project title?'},
+    {name: 'Description', message: 'Project description?'},
+    {name: 'Installation', message: 'Installation instructions?'},
+    {name: 'Usage', message: 'Usage information?'},
 
     {
-        type: 'rawlist', name: 'license', message: 'License?',
+        type: 'rawlist', name: 'License', message: 'License?',
         choices: [
             'MIT',
             'Apache 2.0',
@@ -31,11 +34,8 @@ const questions = [
         ]
     },
 
-    {name: 'desc', message: 'Project description?'},
-    {name: 'install', message: 'Installation instructions?'},
-    {name: 'usage', message: 'Usage information?'},
-    {name: 'contr', message: 'Contribution instructions?'},
-    {name: 'test', message: 'Test instructions?'},
+    {name: 'Contributing', message: 'Contribution instructions?'},
+    {name: 'Tests', message: 'Test instructions?'},
     {name: 'githubID', message: 'Github username?'},
     {name: 'email', message: 'Email?'},
 
