@@ -2,8 +2,9 @@
 
 // import generateMarkdown from './utils/generateMarkdown';
 
-var inquirer = require('inquirer');
+const inquirer = require('inquirer');
 const fs = require('fs');
+const generator = require('./utils/generateMarkdown');
 
 
 // TODO: Create an array of questions for user input
@@ -22,7 +23,7 @@ const questions = [
     {name: 'Usage', message: 'Usage information?'},
 
     {
-        type: 'rawlist', name: 'License', message: 'License?',
+        type: 'list', name: 'License', message: 'License?',
         choices: [
             'MIT',
             'Apache 2.0',
@@ -42,7 +43,11 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(`./results/${fileName}.md`, data, (err) =>
+        err ? console.error(err) : console.log('Success!')
+    );
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -50,10 +55,9 @@ function init() {
     let prompt = inquirer.createPromptModule();
 
     prompt(questions)
-        .then(answers => {
-            console.log(answers);
-
-        })
+    .then((answers) => {
+        writeToFile('README', generator.generate(answers));
+    });
 
 }
 
