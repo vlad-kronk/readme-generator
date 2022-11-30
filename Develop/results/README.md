@@ -1,4 +1,4 @@
-# title!!!
+# Title of the test project
 
 ## Table of Contents
 
@@ -12,30 +12,30 @@
 
 ## License
 
-![](https://img.shields.io/badge/License-Apache%202.0-blue?logo=nodedotjs&style=for-the-badge)
+![](https://img.shields.io/badge/License-The%20Unlicense-blue?logo=nodedotjs&style=for-the-badge)
 
 ## Description
 
-test
+test description! very descriptive and lengthy
 
 ## Installation
 
-test
+how to install this project. 
 
 ## Usage
 
-test
+instructions on how to USE this beautifully made project
 
 ## Contributing
 
-test
+how on earth could some of you fantastic people contribute to this beautifully made project
 
 ## Testing
 
-test
+testing instructions for this project
 
 ## Questions
 
-Github profile: <a href="https://github.com/test">test</a>
+Github profile: <a href="https://github.com/vladkronk">vladkronk</a>
 
-  Email <a href="mailto: test">test</a> with any further questions.
+  Email <a href="mailto: jacobmeyers6@outlook.com">jacobmeyers6@outlook.com</a> with any further questions.
